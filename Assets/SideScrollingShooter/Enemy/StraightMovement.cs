@@ -1,4 +1,4 @@
-using System.Numerics;
+using UnityEngine;
 
 namespace SSShooter
 {
@@ -6,12 +6,12 @@ namespace SSShooter
     {
         public override void Move()
         {
-
+            transform.Translate(direction * speed * Time.deltaTime);
         }
 
-        public void Initialize()
+        protected override void Start()
         {
-
+            Initialize(1f, Vector2.left);
         }
 
         protected override void Update()

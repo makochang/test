@@ -15,16 +15,12 @@ namespace SSShooter
     {
         // --- 属性 ---
         public int hp;                // 体力
-        public float speed;            // 移動速度
         public int score;             // 倒した時のスコア
 
         // --- 操作 ---
         // 初期化処理
-        public virtual void Initialize(int hp, float speed, int score)
+        public virtual void Initialize()
         {
-            this.hp = hp;
-            this.speed = speed;
-            this.score = score;
         }
 
         // 被弾処理
